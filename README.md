@@ -1,5 +1,14 @@
 [![CI](https://github.com/Thomasgsn/projet/actions/workflows/ci.yml/badge.svg)](https://github.com/Thomasgsn/projet/actions)
 
+# Installation
+```
+git clone https://github.com/Thomasgsn/projet.git
+```
+puis
+```
+docker-compose up --build
+```
+
 # 🚀 Task Manager App
 
 ## 📋 Présentation
@@ -36,8 +45,8 @@ Une fois tout lancé :
 
 🔌 API Backend : http://localhost:3000/tasks
 
-
 ## 📦 Structure du projet
+
 ```
 task-manager-app/
 ├── backend/
@@ -63,4 +72,29 @@ task-manager-app/
 └── .github/
     └── workflows/
         └── ci.yml
+```
+
+## TEST
+
+#### CI
+```
+git add README.md
+git commit -m "test pipeline"
+git push
+```
+
+
+#### k8s
+créer le cluster
+```
+kind create cluster --name devops-project
+```
+appliquer le cluster
+```
+kubectl apply -f k8s/
+```
+```
+kubectl get pods
+kubectl get services
+kubectl get ingress
 ```
