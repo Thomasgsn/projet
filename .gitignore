@@ -1,0 +1,53 @@
+backend/node_modules/
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+
+frontend/dist/
+frontend/node_modules/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+logs/
+*.log
+*.out
+*.err
+
+.env
+.env.*
+backend/.env
+frontend/.env
+
+docker-compose.override.yml
+docker-compose.override.yaml
+.docker/
+volumes/
+db_data/
+
+k8s/*.yaml~
+k8s/*.bak
+
+.DS_Store
+
+.vscode/
+.idea/
+*.iml
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# GitHub Actions temp files
+.github/workflows/*.bak
+.github/workflows/*.tmp
+
+# Coverage (tests)
+coverage/
+lcov-report/
+
+# Other system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini

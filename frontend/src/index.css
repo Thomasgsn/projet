@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+html, body {
+  @apply bg-[#121212] text-slate-50;
+}
+
+.custom-scrollbar {
+  &::-webkit-scrollbar {
+    @apply w-[5px];
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    @apply rounded-xl bg-transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply rounded-xl;
+    background: #888;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    @apply rounded-xl bg-transparent;
+  }
+}
+
+button {
+  @apply flex items-center justify-center rounded-md cursor-pointer transition-colors font-semibold **:transition-colors;
+}
+
+button.add {
+  @apply bg-teal-500 hover:bg-teal-300 text-slate-50 hover:text-slate-950 py-1 px-3;
+}
+
+button.delete {
+  @apply bg-red-500 hover:bg-red-200 text-slate-50 hover:text-slate-950;
+}
