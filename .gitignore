@@ -39,15 +39,12 @@ k8s/*.bak
 *.swp
 *.swo
 
-# GitHub Actions temp files
 .github/workflows/*.bak
 .github/workflows/*.tmp
 
-# Coverage (tests)
 coverage/
 lcov-report/
 
-# Other system files
 Thumbs.db
 ehthumbs.db
 Desktop.ini
