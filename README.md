@@ -76,20 +76,11 @@ task-manager-app/
 
 ## TEST
 
-#### CI
-```
-git add README.md
-git commit -m "test pipeline"
-git push
-```
-
 
 #### k8s
-créer le cluster
 ```
 kind create cluster --name devops-project
 ```
-appliquer le cluster
 ```
 kubectl apply -f k8s/
 ```
