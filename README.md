@@ -89,3 +89,13 @@ kubectl get pods
 kubectl get services
 kubectl get ingress
 ```
+
+
+#### CI 
+probléme car j'avais mis main au lieu de master
+
+#### dockerfile
+
+node:20 inclut Node.js et npm préinstallés.
+node:20-alpine image légère de Node.js.
+nginx:alpine image très légère de Nginx, serveur web performant pour servir les fichiers statiques.
